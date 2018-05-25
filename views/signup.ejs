@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Passport Local Stratergy</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" href="../public/css/custom.css">
+
+</head>
+<body>
+
+<div class="container" style="margin-bottom: 100px;">
+
+    <div class="text-center reg_msg">
+<h2 style="color:blue;">Signup</h2>
+        <span><%= usererror %></span>
+    </div><br>
+
+    <div class="row signup">
+        <form action="/signup" method="post">
+            <div class="row form-group input_group">
+                <div class="col-sm-12">
+                    <input type="text" name="name" id="fullname" class="form-control" placeholder="enter name">
+                </div>
+            </div>
+
+            <div class="row form-group input_group">
+                <div class="col-sm-12">
+                    <input type="text" name="email" id="email" class="form-control" placeholder="enter email">
+                </div>
+            </div>
+
+            <div class="row form-group input_group">
+                <div class="col-sm-12">
+                    <input type="password" name="password" id="password" class="form-control" placeholder="enter password">
+                </div>
+            </div>
+            <div class="row form-group input_group">
+                <div class="col-sm-12">
+                    <input type="submit" name="submit" id="sign_up" class="form-control btn btn-primary" value="SIGN UP">
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+</div>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
